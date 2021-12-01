@@ -1,29 +1,18 @@
 <html>
     <head>
-        <title>{{title}} - Book Orders</title>
+        <title>{{title}} - Orders</title>
     </head>
     <body>
-        <h1>Book Orders</h1>
-        {% for order in orders%}
-        <div>
-            <h2>{{order.customer_name}}:</h2>
-            <p>{{order.book_title}}</p>
-        </div>
-        {% endfor %}
+        <section>
+                <h1>Book Orders</h1>
+                {% for order in orders %}
+                <div>
+                <a href = "orders/{{orders.index(order)}}"><h2>{{order.customer_name}}:</h2></a>
+                <div>
+                <p>Book Title: {{order.book_title}}</p>
+                <p>Order Date: {{order.order_date}}</p>
+                </div>
+                {% endfor %}
+        </section>
     </body>
 </html>
-
-<!-- <html>
-    <head>
-        <title>{{title}} - My Todo List</title>
-    </head>
-    <body>
-        <h1>My Todo List</h1>
-        {% for task in tasks%}
-        <div> 
-            <h2>{{task.title}}:</h2>
-            <p> <b> {{task.description}}</b> <i>Is the task done? </i> {{task.done}}</p>
-        </div>
-        {% endfor %}
-    </body>
-</html> -->

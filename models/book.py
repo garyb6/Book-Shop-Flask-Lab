@@ -1,4 +1,4 @@
-class Book():
+class Order():
     
     def __init__(self, customer_name, order_date, quantity, book_title, genre):
         self.customer_name = customer_name
