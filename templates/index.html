@@ -6,9 +6,24 @@
         <h1>Book Orders</h1>
         {% for order in orders%}
         <div>
-            <h2>{{order.customer_name}}</h2>
+            <h2>{{order.customer_name}}:</h2>
             <p>{{order.book_title}}</p>
         </div>
         {% endfor %}
     </body>
 </html>
+
+<!-- <html>
+    <head>
+        <title>{{title}} - My Todo List</title>
+    </head>
+    <body>
+        <h1>My Todo List</h1>
+        {% for task in tasks%}
+        <div> 
+            <h2>{{task.title}}:</h2>
+            <p> <b> {{task.description}}</b> <i>Is the task done? </i> {{task.done}}</p>
+        </div>
+        {% endfor %}
+    </body>
+</html> -->
