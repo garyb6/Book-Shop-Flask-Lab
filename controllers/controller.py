@@ -8,4 +8,4 @@ def order_list():
 
 @app.route('/orders/<ordernumber>')
 def order_details(ordernumber):
-    return render_template ('bookorders.html', order=ordernumber, orders=orders)
+    return render_template ('bookorders.html', title="Order Details", order=ordernumber, orders=orders)

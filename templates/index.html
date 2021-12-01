@@ -10,6 +10,7 @@
                 <a href = "orders/{{orders.index(order)}}"><h2>{{order.customer_name}}:</h2></a>
                 <div>
                 <p>Book Title: {{order.book_title}}</p>
+                <p>Quantity: {{order.quantity}}</p>
                 <p>Order Date: {{order.order_date}}</p>
                 </div>
                 {% endfor %}
