@@ -4,8 +4,8 @@
 <body>
     <section>
             <h1>Order Details</h1>
-            {% for order in orders %}
-                {% if order[index] == chosen_order %} 
+            {% for order in orders%}
+                {%if index == order[index]%} 
                     <h2>{{order.customer_name}}:</h2>
                     <p>Title: {{order.book_title}}</p>
                     <p>Date: {{order.order_date}}</p>
