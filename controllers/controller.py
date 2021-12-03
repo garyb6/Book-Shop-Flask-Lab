@@ -9,4 +9,4 @@ def order_list():
 @app.route('/orders/<index>')
 def order_details(index):
     # chosen_order= orders[int(index)]
-    return render_template ('bookorders.html', title="Order Details", order=index, orders=orders)
+    return render_template ('bookorders.html', title="Order Details", order=int(index), orders=orders)
